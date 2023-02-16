@@ -1,0 +1,419 @@
+body {
+    background-color:white;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(50px, auto);
+    margin:0 ;
+    font-family: garamond;
+    padding-bottom: 20px;
+}
+
+a {
+    color: black;
+}
+
+body > p1 {
+    grid-column: 3;
+    grid-row:4;
+    text-align:center;
+    color:white;
+    padding-top:20px;
+}
+/*Index css*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(50px, auto);
+    border: solid 1px black;
+    position: fixed;
+    width:100%;
+    grid-column: 1/6;
+    background-color:white;
+    margin-bottom: 50px;
+    z-index:999;
+}
+
+.titel {
+    color:white;
+    grid-column:3;
+    text-align:center;
+    font-size:large;
+    margin:auto;
+    grid-row:2;
+    padding-top:25%;
+}
+
+.titel > p {
+    padding-top: 0;
+    margin:auto;
+}
+#loggahem {
+    padding-right:10px;
+    margin:auto;
+    width:60px;
+}
+
+#Fauxlenciaga {
+    position:absolute;
+    padding-left: 63px;
+    padding-top: 7px;
+}
+
+#logo {
+    width:60px;
+    
+}
+
+.user {
+    margin: auto;
+}
+
+#user {
+    width:40px;
+    margin: auto;
+}
+.loggain{
+    float:right;
+    position:absolute;
+    padding-left:50px;
+    padding-top: 3px;
+    z-index:1;
+}
+#loggain {
+    margin:auto;
+}
+
+.registrera {
+    position:absolute;
+    padding-left:50px;
+    padding-top:19px;
+    float:right;
+    clear:right;
+    
+}
+
+#registrera {
+    margin:auto;
+}
+
+.klader, .forum, .om {
+    text-align: center;
+    margin: auto;
+    font-size: x-large;
+}
+
+.kladerhem, .forumhem, .omhem{
+    text-align:center;
+    margin:auto;
+    font-size: 300%;
+    padding-top:100%;
+    grid-row:2;
+    grid-column:3;
+}
+
+
+.kladerhem > a, .forumhem > a, .omhem > a {
+    color:white;
+}
+
+.kladerhem{
+    grid-column:2;
+}
+
+.omhem {
+    grid-column: 4;
+}
+.userhem {
+    padding-top: 10%;
+    margin:auto;
+    grid-column:3;
+    grid-row:3;
+    text-align:center;
+    color:white;
+}
+
+.userhem > div > a {
+    color:rgb(255, 255, 255);
+}
+
+#forumknapp, #kläderknapp, #Omknapp {
+    text-decoration:none;
+}
+
+#forumknapp:hover, #kläderknapp:hover, #Omknapp:hover {
+    text-decoration: underline;
+}
+
+/* Login css*/
+.loginwrapper {
+    border-radius: 25px;
+    width: 400px;
+    height: 500px, auto;
+    grid-column:3;
+    grid-row: 2;
+    margin:auto;
+    text-align: center;
+    color:white;
+    padding-bottom:15%;
+}
+
+.loginwrapper > a > #logo {
+    padding-top: 5px;
+    width: 30%;
+}
+
+p > a {
+    color:white;
+}
+
+form, .content {
+    text-align: center;
+	width: 50%;
+    margin: 0px auto;
+    padding-top: 0;
+	
+	border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+	margin: 10px 0px 10px 0px;
+}
+.input-group label {
+	display: block;
+	text-align: left;
+	margin: 3px;
+}
+.input-group input {
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+
+/*Forum css*/
+h1 {
+    grid-row:2;
+    text-align:center;
+    grid-column: 3;
+    font-weight:normal;
+}
+
+#topics {
+    margin-top:50px;
+    margin-bottom: 20px;
+    grid-column: 3;
+    border-collapse:collapse;
+    max-height: 50px;
+    color:white;
+    grid-row:4;
+}
+
+#topics > a {
+    color:white;
+}
+
+th {
+    padding-top:50px;
+    border-bottom:1px solid gray;
+    width: 50%;
+}
+
+td {
+    border-bottom:1px solid gray;
+    text-align:center;
+}
+
+/* Om css */
+.Omhemsidan {
+    text-align:center;
+    margin:auto;
+    font-size: 300%;
+    padding-top:50%;
+    grid-row:2;
+    grid-column:3;
+    color:white;
+}
+
+.Omhemsidan > p, .Omhemsidan > p > a{
+font-size:large;
+color:white;
+text-decoration: none;
+}
+
+.Omhemsidan > p > a:hover{
+    text-decoration: underline;
+}
+
+/* Topic css */
+.topic {
+    color:white;
+    grid-row:2;
+    grid-column: 2/5;
+    margin: 15px;
+    border:1px black solid;
+    padding-bottom: 10px;
+    padding:20px;
+    height: auto;
+    overflow-wrap:break-word;
+    background-color:rgba(0, 0, 0, 0.687);
+}
+
+.topic > * {
+    margin: 10px;
+}
+
+#redigeraikon{
+    margin: 3px;
+    padding: 0;
+    float:left;
+    font-family: garamond;
+    background-color:transparent;
+    font-weight:bold;
+    color:white;
+}
+
+#redigeraikon:hover{
+    background-color:rgba(108, 108, 108, 0.707);
+}
+
+#knapp {
+    font-family: garamond;
+    background-color:transparent;
+    color:white;
+    font-weight:bold;
+}
+
+#knapp:hover {
+    background-color:rgba(108, 108, 108, 0.707);
+}
+
+#redigeraposttext {
+    resize:none;
+    width:500px;
+    height:200px;
+    overflow:auto;
+}
+
+#commentform > * {
+    float:left;
+}
+
+.raderaruta {
+    text-align:center;
+}
+
+/*kläder css*/
+.Kläder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(50px, auto);
+    padding:10px;
+    grid-row: 3;
+    grid-column:2/5;
+    color:black;
+}
+
+.PJ, .PB, .PS {
+    text-align: center;
+    grid-column: 2;
+}
+
+.j1, .b1, .s1 {
+    grid-column:1;
+}
+
+.PB{
+    grid-row:3;
+}
+
+.b1, .b2, .b3 {
+    grid-row:4;
+}
+
+.j2, .b2, .s2 {
+    grid-column: 2;
+}
+
+.PS {
+    grid-row:5;
+}
+
+.s1, .s2, .s3 {
+    grid-row: 6;
+}
+
+.j3, .b3, .s3 {
+    grid-column: 3;
+}
+
+.j1, .j2, .j3, .b1, .b2, .b3, .s1, .s2, .s3 {
+    padding-bottom: 20px;
+    text-align:center;
+    
+}
+
+#plagg {
+    transition: transform .2s;
+    width: 40%;
+
+}
+
+#plagg:hover {
+    border: 0.5px black solid;
+    transform: scale(2);
+    
+}
