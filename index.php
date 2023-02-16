@@ -1,0 +1,41 @@
+<?php?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="w4schools.com">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="BackEndBoyz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="projektlogga.png">
+    <script src="js.js"></script>
+    <title>Fauxlenciaga</title>
+</head>
+
+<body style="background: url('balenci.gif');background-size:cover;">
+<!--<label class="switch">
+  <input id="mycheck" type="checkbox">
+  <span class="slider"></span>
+</label>-->
+    <div class="titel" id="titel">
+        <img id="loggahem" src="projektloggahem.png">
+        <p>Fauxlenciaga</p>
+    </div>
+    <div class="kladerhem">
+        <a href="" id="kläderknapp">Kläder</a>
+    </div>
+    <div class="forumhem">
+        <a href="" id="forumknapp">Forum</a>
+    </div>
+    <div class="omhem">
+        <a href="" id="Omknapp">Om Sidan</a>
+    </div>
+    <div class="userhem">
+        <?php?>
+    </div>
+
+</body>
+
+</html>
